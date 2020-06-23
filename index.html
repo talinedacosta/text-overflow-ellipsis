@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-overlow: ellipsis</title>
+
+    <style>
+        div{
+            background-color: azure;
+            width: 170px;        
+            text-overflow: ellipsis;
+            /* BOTH of the following are required for text-overflow */
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        div:hover{
+            width: 270px;
+            white-space: normal;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        This keyword value will display an ellipsis ('…', U+2026 HORIZONTAL ELLIPSIS) to represent clipped text. The ellipsis is displayed inside the content area, decreasing the amount of text displayed. If there is not enough space to display the ellipsis, it is clipped. 
+    </div>
+
+    <p>credits to: developer.mozilla.org</p>
+</body>
+</html>
